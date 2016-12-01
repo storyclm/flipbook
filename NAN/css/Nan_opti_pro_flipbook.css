@@ -1,0 +1,93 @@
+#slide_Nan_opti_pro_1_layer_1 {
+	background-size:100% 100%;
+	background-image:url(../images/Nan_opti_pro_1/slide_Nan_opti_pro_1_layer_1.png);
+	position: absolute;
+	top:0px;
+	left:0px;
+	width:1024px;
+	height:768px;
+}
+
+
+#slide_Nan_opti_pro_1_layer_2 {
+	background-size:100% 100%;
+	background-image:url(../images/Nan_opti_pro_1/slide_Nan_opti_pro_1_layer_2.png);
+	position: absolute;
+	top:0px;
+	left:611.5px;
+	width:275.5px;
+	height:132.5px;
+}
+
+
+#slide_Nan_opti_pro_1_layer_3 {
+	background-size:100% 100%;
+	background-image:url(../images/Nan_opti_pro_1/slide_Nan_opti_pro_1_layer_3.png);
+	position: absolute;
+	top:0px;
+	left:835px;
+	width:189px;
+	height:314.5px;
+}
+
+.nestle-flipbook {
+	position: absolute;
+	top: 15%;
+	left: 10%;
+}
+.nestle-flipbook__page {
+	background-color: #fff;
+}
+
+.nestle-flipbook__page--green {
+	background-color: #aad430;
+}
+
+.nestle-flipbook__page--orange {
+	background-color: #d49a30;
+}
+
+.nestle-flipbook__page--blue {
+	background-color: #658c92;
+}
+
+.nestle-flipbook__page--red {
+	background-color: #9a5154;
+}
+
+.nestle-flipbook__page-content {
+	padding: 10px 15px;
+}
+
+.nestle-flipbook__logo {
+	position: relative;
+	left: auto;
+	margin: -10px auto 50px;
+}
+
+.nestle-flipbook__page-title {
+	text-align: center;
+	font-size: 30px;
+	color: #333;
+}
+
+.nestle-flipbook__control {
+	margin-top: 20px;
+	text-align: center;
+}
+.nestle-flipbook__control-prev, .nestle-flipbook__control-next {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	cursor: pointer;
+} 
+.nestle-flipbook__control-prev {
+	border-width: 30px 65px 30px 0;
+	border-color: transparent #0182ca transparent transparent;	
+	margin-right: 40px;
+}
+.nestle-flipbook__control-next {
+	border-width: 30px 0 30px 65px;
+	border-color: transparent transparent transparent #0182ca;
+}

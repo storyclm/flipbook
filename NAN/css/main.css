@@ -1,0 +1,475 @@
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, del, dfn, em, font, img, ins, q, small, strike, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, footer, header, article, aside, canvas, nav, section, table, caption, tbody, tfoot, thead, tr, th, td {
+    background: transparent;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+
+article, footer, header, menu, nav, section, aside, canvas {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+blockquote {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after {
+    content: '';
+    content: none;
+}
+
+table, caption, tbody, tfoot, thead, tr, th, td {
+    border: none;
+    border-collapse: collapse;
+    border-spacing: 0;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    /*-webkit-touch-callout: none;*/
+    /*-webkit-user-select: none;*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    /*-webkit-text-size-adjust: none;*/
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+@font-face {
+    font-family: Acrom-Bold;
+    src: url(../fonts/Acrom-Bold.ttf);
+}
+
+@font-face {
+    font-family: Acrom-ExtraBold;
+    src: url(../fonts/Acrom-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: Acrom-Regular;
+    src: url(../fonts/Acrom-Regular.ttf);
+}
+
+@font-face {
+    font-family: Acrom-Light;
+    src: url(../fonts/Acrom-Light.ttf);
+}
+
+@font-face {
+    font-family: Acrom-Medium;
+    src: url(../fonts/Acrom-Medium.ttf);
+}
+
+@font-face {
+    font-family: Acrom-Thin;
+    src: url(../fonts/Acrom-Thin.ttf);
+}
+
+@font-face {
+    font-family: FunCityLevel2-Basic;
+    src: url(../fonts/FunCityLevel2-Basic.ttf);
+}
+
+@font-face {
+    font-family: FunCityLevel3-Basic;
+    src: url(../fonts/FunCityLevel3-Basic.ttf);
+}
+@font-face {
+    font-family:RotondaCmod;
+    src: url(../fonts/RotondaCmod.ttf);
+}
+@font-face {
+    font-family:RotondaCmod-Bold;
+    src: url(../fonts/RotondaCmod-Bold.ttf);
+}
+
+sup{
+    font-size: 0.6em;
+    vertical-align: super;
+}
+.slide-wrapper{
+    left: 0px;
+    top: 0px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 0;
+    width:1024px;
+    height:768px;
+}
+.logo{
+    background-size:100% 100%;
+    background-image:url(../images/global/logo.png);
+    position: absolute;
+    top:0px;
+    left:789px;
+    width:225px;
+    height:184px;
+    z-index: 100;
+}
+.logo2{
+    background-size:100% 100%;
+    background-image:url(../images/global/logo2.png);
+    position: absolute;
+    top:0px;
+    left:789px;
+    width:225px;
+    height:184px;
+    z-index: 100;
+}
+.nan-footer{
+    background-size:100% 100%;
+    background-image:url(../images/global/footer.png);
+    position: absolute;
+    top:673px;
+    left:0px;
+    width:1024px;
+    height:95px;
+    z-index: 101;
+}
+
+.i-button{
+    background-size:100% 100%;
+    background-image:url(../images/global/i-button1.png);
+    position: absolute;
+    top:700px;
+    left:13px;
+    width:62.5px;
+    height:62px;
+    z-index: 102;
+}
+
+.i-button.active{
+    background-image:url(../images/global/i-button2.png);
+}
+
+.magnifier{
+    background-size:100% 100%;
+    background-image:url(../images/global/magnifier1.png);
+    position: absolute;
+    top:700px;
+    left:90px;
+    width:62.5px;
+    height:62px;
+    z-index: 102;
+}
+
+.magnifier.active{
+    background-image:url(../images/global/magnifier2.png);
+}
+
+.links{
+    background-size:100% 100%;
+    background-image:url(../images/global/links1.png);
+    position: absolute;
+    top:700px;
+    left:168px;
+    width:62.5px;
+    height:62px;
+    z-index: 102;
+}
+
+.links.active{
+    background-image:url(../images/global/links2.png);
+}
+
+.links span {
+    position: absolute;
+    display: none;
+    left: -115px;
+    bottom: 100px;
+    width: 950px;
+    color: #fefefe;
+    font-size: 15px;
+    font-family:Acrom-Regular;
+    line-height: 1.2;
+}
+
+.links.active span {
+    display: block;
+}
+
+.links-bg{
+    background-size:100% 100%;
+    background-image:url(../images/global/links-bg.png);
+    position: absolute;
+    top:489.5px;
+    left:0px;
+    width:1024px;
+    height:209.5px;
+    display: none;
+    z-index: 102;
+}
+.links-bg.active{
+    display: block;
+}
+
+.linksPath{
+    position: absolute;
+    display: none;
+    left: 16px;
+    width: 990px;
+    bottom: 20px;
+    height: 50px;
+    background-color: #ba9130;
+    border-radius: 15px;
+    filter: drop-shadow(0px 3px 2px rgba(0,0,0,0.5));
+    -webkit-filter: drop-shadow(0px 3px 2px rgba(0,0,0,0.5));
+}
+
+.triangle{
+    background-size:100% 100%;
+    background-image:url(../images/global/triangle.png);
+    position: absolute;
+    bottom:-53px;
+    left: 148px;
+    width:37.5px;
+    height:55.5px;
+}
+.linksPath.active{
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    opacity: 0;
+    visibility: hidden;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;visibility: visible;}
+    100% {opacity: 1;visibility: visible;}
+}
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;visibility: visible;}
+    100% {opacity: 1;visibility: visible;}
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    opacity: 0;
+    visibility: hidden;
+}
+@-webkit-keyframes fadeInUp {
+    0% {opacity: 0;-webkit-transform: translateY(20px);visibility: visible;}
+    100% {opacity: 1;-webkit-transform: translateY(0);visibility: visible;}
+}
+@-webkit-keyframes fadeInUp {
+    0% {opacity: 0;transform: translateY(20px);visibility: visible;}
+    100% {opacity: 1;transform: translateY(0);visibility: visible;}
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    opacity: 0;
+    visibility: hidden;
+}
+@-webkit-keyframes fadeInDown {
+    0% {opacity: 0;-webkit-transform: translateY(-20px);visibility: visible;}
+    100% {opacity: 1;-webkit-transform: translateY(0);visibility: visible;}
+}
+@-webkit-keyframes fadeInDown {
+    0% {opacity: 0;transform: translateY(-20px);visibility: visible;}
+    100% {opacity: 1;transform: translateY(0);visibility: visible;}
+}
+
+.fadeInRight {
+    -webkit-animation-duration: 0.7s;
+    animation-duration: 0.7s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}
+@-webkit-keyframes fadeInRight {
+    0% {opacity: 0;-webkit-transform: translateX(80px);}
+    100% {opacity: 1;-webkit-transform: translateX(0);}
+}
+@-webkit-keyframes fadeInRight {
+    0% {opacity: 0;transform: translateX(80px);}
+    100% {opacity: 1;transform: translateX(0);}
+}
+
+.fadeInLeft {
+    -webkit-animation-duration: 0.7s;
+    animation-duration: 0.7s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+@-webkit-keyframes fadeInLeft {
+    0% {opacity: 0;-webkit-transform: translateX(-80px);}
+    100% {opacity: 1;-webkit-transform: translateX(0);}
+}
+@-webkit-keyframes fadeInLeft {
+    0% {opacity: 0;transform: translateX(-80px);}
+    100% {opacity: 1;transform: translateX(0);}
+}
+
+.fadeInLeft {
+    -webkit-animation-duration: 0.7s;
+    animation-duration: 0.7s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+@-webkit-keyframes fadeInLeft {
+    0% {opacity: 0;-webkit-transform: translateX(-80px);}
+    100% {opacity: 1;-webkit-transform: translateX(0);}
+}
+@-webkit-keyframes fadeInLeft {
+    0% {opacity: 0;transform: translateX(-80px);}
+    100% {opacity: 1;transform: translateX(0);}
+}
+
+
+.a2 {animation-delay: 200ms; -webkit-animation-delay: 200ms;}
+.a3 {animation-delay: 300ms; -webkit-animation-delay: 300ms;}
+.a4 {animation-delay: 400ms; -webkit-animation-delay: 400ms;}
+.a5 {animation-delay: 500ms; -webkit-animation-delay: 500ms;}
+.a6 {animation-delay: 600ms; -webkit-animation-delay: 600ms;}
+.a7 {animation-delay: 700ms; -webkit-animation-delay: 700ms;}
+.a8 {animation-delay: 800ms; -webkit-animation-delay: 800ms;}
+.a9 {animation-delay: 900ms; -webkit-animation-delay: 900ms;}
+.a10 {animation-delay: 1000ms; -webkit-animation-delay: 1000ms;}
+.a11 {animation-delay: 1100ms; -webkit-animation-delay: 1100ms;}
+.a12 {animation-delay: 1200ms; -webkit-animation-delay: 1200ms;}
+.a13 {animation-delay: 1300ms; -webkit-animation-delay: 1300ms;}
+.a14 {animation-delay: 1400ms; -webkit-animation-delay: 1400ms;}
+.a15 {animation-delay: 1500ms; -webkit-animation-delay: 1500ms;}
+.a16 {animation-delay: 1600ms; -webkit-animation-delay: 1600ms;}
+.a17 {animation-delay: 1700ms; -webkit-animation-delay: 1700ms;}
+.a18 {animation-delay: 1800ms; -webkit-animation-delay: 1800ms;}
+.a19 {animation-delay: 1900ms; -webkit-animation-delay: 1900ms;}
+.a20 {animation-delay: 2000ms; -webkit-animation-delay: 2000ms;}
+.a21 {animation-delay: 2100ms; -webkit-animation-delay: 2100ms;}
+.a22 {animation-delay: 2200ms; -webkit-animation-delay: 2200ms;}
+.a23 {animation-delay: 2300ms; -webkit-animation-delay: 2300ms;}
+.a24 {animation-delay: 2400ms; -webkit-animation-delay: 2400ms;}
+.a25 {animation-delay: 2500ms; -webkit-animation-delay: 2500ms;}
+.a26 {animation-delay: 2600ms; -webkit-animation-delay: 2600ms;}
+.a27 {animation-delay: 2700ms; -webkit-animation-delay: 2700ms;}
+.a28 {animation-delay: 2800ms; -webkit-animation-delay: 2800ms;}
+.a29 {animation-delay: 2900ms; -webkit-animation-delay: 2900ms;}
+.a30 {animation-delay: 3000ms; -webkit-animation-delay: 3000ms;}
+.a31 {animation-delay: 3100ms; -webkit-animation-delay: 3100ms;}
+.a32 {animation-delay: 3200ms; -webkit-animation-delay: 3200ms;}
+.a33 {animation-delay: 3300ms; -webkit-animation-delay: 3300ms;}
+.a34 {animation-delay: 3400ms; -webkit-animation-delay: 3400ms;}
+.a35 {animation-delay: 3500ms; -webkit-animation-delay: 3500ms;}
+.a36 {animation-delay: 3600ms; -webkit-animation-delay: 3600ms;}
+.a37 {animation-delay: 3700ms; -webkit-animation-delay: 3700ms;}
+.a38 {animation-delay: 3800ms; -webkit-animation-delay: 3800ms;}
+.a39 {animation-delay: 3900ms; -webkit-animation-delay: 3900ms;}
+.a40 {animation-delay: 4000ms; -webkit-animation-delay: 4000ms;}
+.a41 {animation-delay: 4100ms; -webkit-animation-delay: 4100ms;}
+.a42 {animation-delay: 4200ms; -webkit-animation-delay: 4200ms;}
+.a43 {animation-delay: 4300ms; -webkit-animation-delay: 4300ms;}
+.a44 {animation-delay: 4400ms; -webkit-animation-delay: 4400ms;}
+.a45 {animation-delay: 4500ms; -webkit-animation-delay: 4500ms;}
+.a46 {animation-delay: 4600ms; -webkit-animation-delay: 4600ms;}
+.a47 {animation-delay: 4700ms; -webkit-animation-delay: 4700ms;}
+.a48 {animation-delay: 4800ms; -webkit-animation-delay: 4800ms;}
+.a49 {animation-delay: 4900ms; -webkit-animation-delay: 4900ms;}
+.a50 {animation-delay: 5000ms; -webkit-animation-delay: 5000ms;}
+.a51 {animation-delay: 5100ms; -webkit-animation-delay: 5100ms;}
+.a52 {animation-delay: 5200ms; -webkit-animation-delay: 5200ms;}
+.a53 {animation-delay: 5300ms; -webkit-animation-delay: 5300ms;}
+.a54 {animation-delay: 5400ms; -webkit-animation-delay: 5400ms;}
+.a55 {animation-delay: 5500ms; -webkit-animation-delay: 5500ms;}
+.a56 {animation-delay: 5600ms; -webkit-animation-delay: 5600ms;}
+.a57 {animation-delay: 5700ms; -webkit-animation-delay: 5700ms;}
+.a58 {animation-delay: 5800ms; -webkit-animation-delay: 5800ms;}
+.a59 {animation-delay: 5900ms; -webkit-animation-delay: 5900ms;}
+.a60 {animation-delay: 6000ms; -webkit-animation-delay: 6000ms;}
+.a61 {animation-delay: 6100ms; -webkit-animation-delay: 6100ms;}
+.a62 {animation-delay: 6200ms; -webkit-animation-delay: 6200ms;}
+.a63 {animation-delay: 6300ms; -webkit-animation-delay: 6300ms;}
+.a64 {animation-delay: 6400ms; -webkit-animation-delay: 6400ms;}
+.a65 {animation-delay: 6500ms; -webkit-animation-delay: 6500ms;}
+.a66 {animation-delay: 6600ms; -webkit-animation-delay: 6600ms;}
+.a67 {animation-delay: 6700ms; -webkit-animation-delay: 6700ms;}
+.a68 {animation-delay: 6800ms; -webkit-animation-delay: 6800ms;}
+.a69 {animation-delay: 6900ms; -webkit-animation-delay: 6900ms;}
+.a70 {animation-delay: 7000ms; -webkit-animation-delay: 7000ms;}
+.a71 {animation-delay: 7100ms; -webkit-animation-delay: 7100ms;}
+.a72 {animation-delay: 7200ms; -webkit-animation-delay: 7200ms;}
+.a73 {animation-delay: 7300ms; -webkit-animation-delay: 7300ms;}
+.a74 {animation-delay: 7400ms; -webkit-animation-delay: 7400ms;}
+.a75 {animation-delay: 7500ms; -webkit-animation-delay: 7500ms;}
+.a76 {animation-delay: 7600ms; -webkit-animation-delay: 7600ms;}
+.a77 {animation-delay: 7700ms; -webkit-animation-delay: 7700ms;}
+.a78 {animation-delay: 7800ms; -webkit-animation-delay: 7800ms;}
+.a79 {animation-delay: 7900ms; -webkit-animation-delay: 7900ms;}
+.a80 {animation-delay: 8000ms; -webkit-animation-delay: 8000ms;}
+#gerber_bg {
+    background-size: 100% 100%;
+    background-image: url(../images/gerberpreza_04/slide_gerberpreza_04_layer_1.png);
+    position: absolute;
+    top: 0.00px;
+    left: 0.00px;
+    width: 1024.00px;
+    height: 768.00px;
+}
+.gerber_header {
+    letter-spacing: .2px;
+    transform: rotate(-2deg);
+}
+.gerber_header span{
+    text-transform: uppercase;
+}
+.gerber_home {
+    background-size: 100% 100%;
+    background-image: url(../images/gerber_home.png);
+    position: absolute;
+    top: 595px;
+    left: 961px;
+    width: 53.00px;
+    height: 81.50px;
+    transform: rotate(-90deg);
+}
